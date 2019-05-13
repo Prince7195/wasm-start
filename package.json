@@ -1,0 +1,16 @@
+{
+    "name": "wasm-start",
+    "version": "1.0.0",
+    "description": "A WebAssembly programming start up",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "build": "emcc lib/demo.c -s WASM=1 -o public/demo.js"
+    },
+    "author": "Vijay Deepak",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.4"
+    }
+}
